@@ -377,6 +377,9 @@ public class KeywordFunctions {
 		case "class" :
 			logger.info("Web Element is an - > className"); 
 			return driver.findElement(By.className(webElementValue));
+		case "tag" :
+			logger.info("Web Element is an - > TagName"); 
+			return driver.findElement(By.tagName(webElementValue));
 		case "link" :
 			logger.info("Web Element is an - > partialLink and the webElementValue is -> " + webElementValue); 
 			return driver.findElement(By.partialLinkText(webElementValue));
